@@ -43,8 +43,8 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  return foods.map(x => x.isVegetarian ? `${x.food} is suitable for vegetarians` : `${x.food} is not suitable for vegetarians`)
 }
-
 
 
 // Ne pas modifier l'export
